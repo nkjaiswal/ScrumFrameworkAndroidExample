@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="info.myconnectedhome.scrumtool.SprintDetails">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/spd_sprint_version"
+        android:layout_below="@+id/spd_sprint_name"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/spd_sprint_status"
+        android:layout_below="@+id/spd_sprint_version"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/spd_sprint_name"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/spd_sprint_start"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/spd_sprint_status" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/spd_sprint_ends"
+        android:layout_below="@+id/spd_sprint_start"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Backlogs"
+        android:id="@+id/textView11"
+        android:layout_below="@+id/spd_sprint_ends"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="22dp"
+        android:autoText="false"
+        android:background="#d28585" />
+    <ListView
+        android:id="@+id/spd_backlog_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView11"></ListView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Assigned Users"
+        android:id="@+id/textView12"
+        android:layout_below="@+id/spd_backlog_list"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="22dp"
+        android:background="#d28585"/>
+    <ListView
+        android:id="@+id/spd_assigned_user_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView12"></ListView>
+
+</RelativeLayout>
